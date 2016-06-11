@@ -37,10 +37,10 @@ public class IsUnique {
       return false;
     }
   }
-  
 
   public static void main(String[] args) throws IOException {
     System.out.println(isUniqueUsingHash("Word") ? "Unique" : "Not Unique"); 
-    System.out.println(isUniqueUsingSort("Nootunique") ? "Unique" : "Not Unique"); 
+    System.out.println(isUniqueUsingSort("Nootunique") ? "Unique" : "Not Unique");
+    System.out.println(isUniqueUsingHashset("I am wonderful") ? "Unique" : "Not Unique"); 
   }
 }
