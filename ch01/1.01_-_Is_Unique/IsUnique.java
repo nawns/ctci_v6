@@ -25,6 +25,20 @@ public class IsUnique {
     return true;
   }
 
+  public static boolean isUniqueUsingHashset(String word) {
+    word = word.replaceAll("\\s","");
+    HashSet<Character> set=new HashSet<Character>();
+    for(int i=0;i<input.length(); i++) {
+      set.add(input.charAt(i));
+    }
+    if(input.length() == set.size()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+
   public static void main(String[] args) throws IOException {
     System.out.println(isUniqueUsingHash("Word") ? "Unique" : "Not Unique"); 
     System.out.println(isUniqueUsingSort("Nootunique") ? "Unique" : "Not Unique"); 
